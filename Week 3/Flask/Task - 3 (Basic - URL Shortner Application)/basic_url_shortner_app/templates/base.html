@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+    {% block head_text %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title_text %}{% endblock %} | URL Shortner - Basic</title>
+        <meta name="description" content="HTML5, CSS, JS, Flask, Python, URL Shortner">
+        <meta name="author" content="Saurav Panchal">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    {% endblock head_text %}
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+        }
+        body {
+            background-color: #dedbd8;
+            font-family: 'Open Sans';
+            font-weight: 500;
+        }
+        table {
+            border: 1px solid;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #000000;
+        }
+        tr:hover {
+            background-color: gray;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        button {
+            font-size:13pt;
+            height:35px;
+            width:200px;
+        }
+        textarea {
+            font-size:15pt;
+            height:30px;
+            width:260px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <a href="{{ url_for("index") }}">Home</a>
+            <a href="{{ url_for("history") }}">History</a>
+        </nav>
+        {% block body_text %}
+        
+        {% endblock body_text %}
+
+        <div class = "footer">
+            <a href = "https://linktr.ee/sauravpanchal" target = "_blank" style = "color:white;">© 2022 | Saurav Panchal
+            </a>
+        </div>
+    </body>
+</html>

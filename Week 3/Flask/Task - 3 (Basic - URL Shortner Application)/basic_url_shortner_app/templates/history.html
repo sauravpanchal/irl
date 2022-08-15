@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title_text %}
+History
+{% endblock %}
+
+{% block body_text %}
+    <div class = "center">
+    <h2>Your previous, shortened links ... </h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Long URL</th>
+            <th>Short URL</th>
+            <th>Times Visited</th>
+            <th>Delete URL</th>
+        </tr>
+        {% if links %}
+            {% for link in links %}
+            <tr>
+                <td>{{ link.id }}</td>
+                <td><a href = "{{ link.long_url }}" target = "_blank">{{ link.long_url }}</a></td>
+                <td><a href = "{{ link.short_url }}" target = "_blank">127.0.0.1:5000/{{ link.short_url }}</a></td>
+                <td>{{ link.visits }}</td>
+                <td><a href="{{ link.id }}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        {% endif %}
+    </table>
+</div>
+{% endblock body_text %}

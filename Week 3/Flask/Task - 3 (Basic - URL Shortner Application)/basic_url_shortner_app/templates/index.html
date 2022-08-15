@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title_text %}
+Home
+{% endblock title_text %}
+
+{% block body_text %}
+<div class = "center">
+  {% if not short_url %}
+    <form method = "post" action = "">
+    <h1>Enter URL</h1>
+    <input type = "url" placeholder = "https://..." name = "long_url" size = "55" style = "font-size:18pt;">
+    <br><br>
+    <button type = "submit">Generate short URL</button>
+    </form>
+  {% endif %}
+  <br><br>
+  {% if short_url %}
+    <textarea id = "short_url" rows = "2" cols = "40">{{ short_url }}</textarea>
+    <br>
+    <hr>
+    <button onclick = "copy_short_url()">Copy</button>
+  {% endif %}
+</div>
+
+<script> 
+
+function copy_short_url() 
+{
+  var copyText = document.getElementById("short_url");
+  copyText.select();
+  copyText.value;
+  navigator.clipboard.writeText("127.0.0.1:5000/"+copyText.value);
+  alert("Copied the short URL to clipboard - " + "127.0.0.1:5000/"+copyText.value);
+}
+
+</script>
+{% endblock body_text %}
