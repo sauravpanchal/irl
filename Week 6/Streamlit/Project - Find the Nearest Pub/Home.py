@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import io # to maintain buffers
 
-st.sidebar.markdown("# Main page 🎈")
+st.sidebar.markdown("# Saurav Panchal 👨🏻‍💻")
+st.sidebar.markdown("[Edit here ⚒️](https://github.com/sauravpanchal/irl/tree/main/Week%206/Streamlit/Project%20-%20Find%20the%20Nearest%20Pub)")
+
 def get_df():
     df = pd.read_csv("open_pubs.csv", na_values = "\\N")
     return df
@@ -13,7 +14,7 @@ def remove_na(df):
 
 st.title("Open Pub Application")
 
-st.header("Home")
+st.header("Home 🏠")
 st.caption("Below are some statistics about the dataset")
 
 st.caption("Sum of null values in dataset")
