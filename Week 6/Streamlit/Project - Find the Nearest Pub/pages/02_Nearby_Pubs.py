@@ -12,7 +12,7 @@ st.header("Nearby Pubs 🥂")
 
 lat = st.text_input("Enter your latitude", "51.970379")
 lon = st.text_input("Enter your longitude", "0.979340")
-near = st.number_input("Enter how nearby pubs you are searching", 5)
+near = st.number_input("Enter how many nearby pubs are you searching", 5)
 lat = np.array(float(lat))
 lon = np.array(float(lon))
 
