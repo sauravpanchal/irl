@@ -20,7 +20,7 @@ def load_model(model_name):
     model_name: Object
         Deserialized model object
     '''
-    return load(open("./models/" + model_name + ".pkl", "rb"))
+    return load(open("Diamond_Streamlit_Application/models/" + model_name + ".pkl", "rb"))
 
 def load_encoder(encoder):
     '''
