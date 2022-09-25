@@ -172,7 +172,7 @@ def get_model_snippet(model):
 
     return code
 
-df = pd.read_csv("diamonds.csv")
+df = pd.read_csv("https://media.githubusercontent.com/media/sauravpanchal/irl/main/Week_6/Streamlit/Diamond_Streamlit_Application/diamonds.csv")
 df.rename(columns={'x':'length', 'y':'width', 'z':'depth', 'depth':'depth%'}, inplace = True)
 df[["length", "width", "depth"]] = df[["length", "width", "depth"]].replace(0, np.nan)
 df.dropna(inplace = True)
