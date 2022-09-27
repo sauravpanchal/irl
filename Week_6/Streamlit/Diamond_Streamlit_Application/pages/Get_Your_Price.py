@@ -3,7 +3,9 @@ from Home import load_model, load_encoder, load_scaler
 import numpy as np
 
 st.sidebar.markdown("# Saurav Panchal 👨🏻‍💻")
-st.sidebar.markdown("[Edit here ⚒️](https://github.com/sauravpanchal/irl/tree/main/Week%206/Streamlit)")
+st.sidebar.markdown("[LinkedIn 💼](https://linkedin.com/in/sauravpanchal) | [Twitter 🕊️](https://twitter.com/sauravpanchhal) | [GitHub ❣️](https://github.com/sauravpanchal)")
+st.sidebar.markdown("***")
+st.sidebar.markdown("###### [Issues | Bugs | Features ⚒️](https://github.com/sauravpanchal/irl/tree/main/Week_6/Streamlit/Diamond_Streamlit_Application)")
 
 model_option = st.selectbox("Select Model To Apply", ("LinearRegression", "KNeighborsRegressors", "DecisionTreeRegressor", "RandomForestRegressor"))
 st.write(model_option)

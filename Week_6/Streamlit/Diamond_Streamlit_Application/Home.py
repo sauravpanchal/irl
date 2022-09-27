@@ -4,7 +4,9 @@ from pickle import load
 import matplotlib.pyplot as plt, seaborn as sns
 
 st.sidebar.markdown("# Saurav Panchal 👨🏻‍💻")
-st.sidebar.markdown("[Edit here ⚒️](https://github.com/sauravpanchal/irl/tree/main/Week%206/Streamlit)")
+st.sidebar.markdown("[LinkedIn 💼](https://linkedin.com/in/sauravpanchal) | [Twitter 🕊️](https://twitter.com/sauravpanchhal) | [GitHub ❣️](https://github.com/sauravpanchal)")
+st.sidebar.markdown("***")
+st.sidebar.markdown("###### [Issues | Bugs | Features ⚒️](https://github.com/sauravpanchal/irl/tree/main/Week_6/Streamlit/Diamond_Streamlit_Application)")
 
 def load_model(model_name):
     '''
@@ -20,7 +22,7 @@ def load_model(model_name):
     model_name: Object
         Deserialized model object
     '''
-    return load(open("models/" + model_name + ".pkl", "rb"))
+    return load(open("./models/" + model_name + ".pkl", "rb"))
 
 def load_encoder(encoder):
     '''
