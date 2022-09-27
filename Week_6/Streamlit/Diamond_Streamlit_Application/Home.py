@@ -38,7 +38,7 @@ def load_encoder(encoder):
     encoder: Object
         Deserialized encoder object
     '''
-    return load(open("models/" + encoder + ".pkl", "rb"))
+    return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + encoder + ".pkl", "rb"))
 
 def load_scaler(scaler = "StandardScaler"):
     '''
