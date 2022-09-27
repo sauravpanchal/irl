@@ -55,7 +55,7 @@ def load_scaler(scaler = "StandardScaler"):
     scaler: Object
         Deserialized scaler object
     '''
-    return load(open("models/" + scaler + ".pkl", "rb"))
+    return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + scaler + ".pkl", "rb"))
 
 def get_model_snippet(model):
     '''
