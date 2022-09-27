@@ -1,1 +1,1 @@
-web: setup.sh && streamlit run Week_6\Streamlit\Diamond_Streamlit_Application\Home.py
+web: setup.sh && streamlit run Week_6/Streamlit/Diamond_Streamlit_Application/Home.py
