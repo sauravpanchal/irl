@@ -3,9 +3,20 @@ import pandas as pd, numpy as np
 from pickle import load
 import matplotlib.pyplot as plt, seaborn as sns
 
-st.sidebar.markdown("# Saurav Panchal 👨🏻‍💻")
-st.sidebar.markdown("[LinkedIn 💼](https://linkedin.com/in/sauravpanchal) | [Twitter 🕊️](https://twitter.com/sauravpanchhal) | [GitHub ❣️](https://github.com/sauravpanchal)")
-st.sidebar.markdown("***")
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.text("By: ")
+st.sidebar.text("Saurav Panchal 👨🏻‍💻")
+st.sidebar.text("Manan Shah 👨🏻‍💻")
+st.sidebar.text("Abhi Patel 👨🏻‍💻")
+# st.sidebar.markdown("[LinkedIn 💼](https://linkedin.com/in/sauravpanchal) | [Twitter 🕊️](https://twitter.com/sauravpanchhal) | [GitHub ❣️](https://github.com/sauravpanchal)")
 st.sidebar.markdown("###### [Issues | Bugs | Features ⚒️](https://github.com/sauravpanchal/irl/tree/main/Week_6/Streamlit/Diamond_Streamlit_Application)")
 
 def load_model(model_name):
@@ -22,7 +33,8 @@ def load_model(model_name):
     model_name: Object
         Deserialized model object
     '''
-    return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + model_name + ".pkl", "rb"))
+    # return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + model_name + ".pkl", "rb"))
+    return load(open("models/" + model_name + ".pkl", "rb"))
 
 def load_encoder(encoder):
     '''
@@ -38,7 +50,8 @@ def load_encoder(encoder):
     encoder: Object
         Deserialized encoder object
     '''
-    return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + encoder + ".pkl", "rb"))
+    # return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + encoder + ".pkl", "rb"))
+    return load(open("models/" + encoder + ".pkl", "rb"))
 
 def load_scaler(scaler = "StandardScaler"):
     '''
@@ -55,7 +68,8 @@ def load_scaler(scaler = "StandardScaler"):
     scaler: Object
         Deserialized scaler object
     '''
-    return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + scaler + ".pkl", "rb"))
+    # return load(open("Week_6/Streamlit/Diamond_Streamlit_Application/models/" + scaler + ".pkl", "rb"))
+    return load(open("models/" + scaler + ".pkl", "rb"))
 
 def get_model_snippet(model):
     '''

@@ -1,9 +1,20 @@
 import streamlit as st
 from Home import get_model_snippet
 
-st.sidebar.markdown("# Saurav Panchal 👨🏻‍💻")
-st.sidebar.markdown("[LinkedIn 💼](https://linkedin.com/in/sauravpanchal) | [Twitter 🕊️](https://twitter.com/sauravpanchhal) | [GitHub ❣️](https://github.com/sauravpanchal)")
-st.sidebar.markdown("***")
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.markdown('##')
+st.sidebar.text("By: ")
+st.sidebar.text("Saurav Panchal 👨🏻‍💻")
+st.sidebar.text("Manan Shah 👨🏻‍💻")
+st.sidebar.text("Abhi Patel 👨🏻‍💻")
+# st.sidebar.markdown("[LinkedIn 💼](https://linkedin.com/in/sauravpanchal) | [Twitter 🕊️](https://twitter.com/sauravpanchhal) | [GitHub ❣️](https://github.com/sauravpanchal)")
 st.sidebar.markdown("###### [Issues | Bugs | Features ⚒️](https://github.com/sauravpanchal/irl/tree/main/Week_6/Streamlit/Diamond_Streamlit_Application)")
 
 model_option = st.selectbox("Select Model To Know The Statistics", ("LinearRegression", "KNeighborsRegressors", "DecisionTreeRegressor", "RandomForestRegressor"))
